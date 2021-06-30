@@ -1,0 +1,952 @@
+[
+    {
+        "id": "a24972bc.42b41",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b17441cd.d245c",
+        "type": "ibmiot",
+        "name": "API key",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "5051adbf.c7c0d4",
+        "type": "ui_tab",
+        "name": "smart system",
+        "icon": "automation",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "111bccc0.21b0f3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "219cd894.572c68",
+        "type": "ui_group",
+        "name": "smart system",
+        "tab": "5051adbf.c7c0d4",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "9a1f8b02.f54628",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4bc2a50f.e8461c",
+        "type": "ui_group",
+        "name": "smart system",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 23,
+        "collapse": false
+    },
+    {
+        "id": "1f1fa9b6.484ff6",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "bae5fee2.62636",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 9
+    },
+    {
+        "id": "133577af.a5b078",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "5857c494.d02bbc",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 1,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "f6d281d.b878e8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 2,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "f001d54e.8622d8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 3,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "735eaf18.f0fcd",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e72b28c9.00fb28",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f3b2e2cf.9aab5",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f6443dc5.c5b72",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f1fe7be8.1f4dc8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "abc621b.01933e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 10,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "72103ccb.fbf6f4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 11,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "c76d9436.64bb18",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 12,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "60544baa.f31f64",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 13,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "c5002ec4.ae458",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 14,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "9ea01478.49a6e8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 15,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "96f0059b.0935a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 16,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "10529c30.f4c104",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 17,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "46e0ad81.3e0e44",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 19,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "a3e48feb.09459",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "4bc2a50f.e8461c",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e7bd656f.e04418",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "97b88700.24a2c8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9fd04be0.0b5088",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bf913170.345f8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "92568b64.9d6d28",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ad9d5701.085a38",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d2de59da.585688",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6d09c825.28e908",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "746cd798.01c658",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "19216e01.6fd8c2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ba168bae.fbf2a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bad89a34.2383b8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "219cd894.572c68",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "199cd245.38dd9e",
+        "type": "ibmiot in",
+        "z": "a24972bc.42b41",
+        "authentication": "apiKey",
+        "apiKey": "b17441cd.d245c",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "200102",
+        "applicationId": "",
+        "deviceType": "externship",
+        "eventType": "",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": false,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "cc04c6df.123238",
+                "cf97f924.cf0588",
+                "cfd3b5e2.daced8"
+            ]
+        ]
+    },
+    {
+        "id": "3f84dc91.bcb144",
+        "type": "debug",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cc04c6df.123238",
+        "type": "function",
+        "z": "a24972bc.42b41",
+        "name": "Temperature",
+        "func": "global.set('t', msg.payload.d.temperature)\nmsg.payload = msg.payload.d.temperature\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "3f84dc91.bcb144",
+                "8ddb32da.e5cc5"
+            ]
+        ]
+    },
+    {
+        "id": "cf97f924.cf0588",
+        "type": "function",
+        "z": "a24972bc.42b41",
+        "name": "Humidity",
+        "func": "global.set('h', msg.payload.d.humidity)\nmsg.payload = msg.payload.d.humidity\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "3f84dc91.bcb144",
+                "eb457a8a.c76cd8"
+            ]
+        ]
+    },
+    {
+        "id": "9d704c0f.73779",
+        "type": "http in",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "url": "/data",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "e6a5a887.d21198"
+            ]
+        ]
+    },
+    {
+        "id": "dfe07a1.265bf88",
+        "type": "http response",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 650,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e6a5a887.d21198",
+        "type": "function",
+        "z": "a24972bc.42b41",
+        "name": "webpage",
+        "func": "msg.payload = {\n    \"Temperature\" : global.get('t'),\n    \"Humidity\" : global.get('h'),\n    \"pHvalue\" : global.get('PH')\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 640,
+        "wires": [
+            [
+                "dfe07a1.265bf88"
+            ]
+        ]
+    },
+    {
+        "id": "ad51a795.1a5738",
+        "type": "http in",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "url": "/command",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 1180,
+        "wires": [
+            [
+                "3d193f2.a0978c"
+            ]
+        ]
+    },
+    {
+        "id": "3d193f2.a0978c",
+        "type": "http response",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "18c035de.d4770a",
+        "type": "watson-assistant-v2",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "service-endpoint": "https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/b4b6ffc9-d8c1-453e-b59b-571c21890aec",
+        "assistant_id": "8ebaf63d-7a70-411a-bd9a-61fe80302296",
+        "debug": false,
+        "restart": false,
+        "return_context": true,
+        "alternate_intents": false,
+        "multisession": true,
+        "timeout": "",
+        "optout-learning": false,
+        "persist-session-id": false,
+        "x": 350,
+        "y": 2040,
+        "wires": [
+            [
+                "5bd29f6a.9cb55"
+            ]
+        ]
+    },
+    {
+        "id": "3e6527c4.40a7f8",
+        "type": "inject",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "params.session_id",
+                "v": "1de6ee38-6ea6-40c9-93b9-373155bf19ae",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Can I order",
+        "payloadType": "str",
+        "x": 80,
+        "y": 2140,
+        "wires": [
+            [
+                "37de7fed.6be7f"
+            ]
+        ]
+    },
+    {
+        "id": "2ae044e6.1b733c",
+        "type": "debug",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "5bd29f6a.9cb55",
+        "type": "function",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "func": "msg.payload = msg.payload.output.generic[0].text\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 2100,
+        "wires": [
+            [
+                "2ae044e6.1b733c",
+                "7a5cd1c9.5f18d"
+            ]
+        ]
+    },
+    {
+        "id": "ab7cb536.6b29f8",
+        "type": "watson-speech-to-text",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "alternatives": 1,
+        "speakerlabels": true,
+        "smartformatting": false,
+        "lang": "en-US",
+        "langhidden": "en-US",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "custom-weight": "0.5",
+        "band": "BroadbandModel",
+        "bandhidden": "",
+        "keywords": "",
+        "keywords-threshold": "0.5",
+        "word-confidence": false,
+        "password": "",
+        "apikey": "WbBWQvpLeX9f7wIvFb0MDlzhx17jobsyruIzehAITHZR",
+        "payload-response": true,
+        "streaming-mode": false,
+        "streaming-mute": true,
+        "auto-connect": false,
+        "discard-listening": false,
+        "disable-precheck": false,
+        "service-endpoint": "https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/06a8b405-b426-4fbf-b335-21515d18e189",
+        "x": 510,
+        "y": 2360,
+        "wires": [
+            [
+                "a47fd71.d828928",
+                "37de7fed.6be7f"
+            ]
+        ]
+    },
+    {
+        "id": "a47fd71.d828928",
+        "type": "debug",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "e3500583.5ecf18",
+        "type": "microphone",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "x": 300,
+        "y": 2460,
+        "wires": [
+            [
+                "ab7cb536.6b29f8"
+            ]
+        ]
+    },
+    {
+        "id": "7a5cd1c9.5f18d",
+        "type": "watson-text-to-speech",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "lang": "en-US",
+        "langhidden": "en-US",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "voice": "en-US_MichaelV2Voice",
+        "voicehidden": "en-US_MichaelV2Voice",
+        "format": "audio/wav",
+        "password": "",
+        "apikey": "rFcFrokSsL3ljYF1Tc1aGrbODL16n53y66x5Fc9kX5vJ",
+        "payload-response": false,
+        "service-endpoint": "https://api.eu-gb.text-to-speech.watson.cloud.ibm.com/instances/57141bff-dfb5-4f74-baa1-9c13abf3c34d",
+        "x": 590,
+        "y": 2540,
+        "wires": [
+            [
+                "d1226ce6.cc656"
+            ]
+        ]
+    },
+    {
+        "id": "ee92ee0b.1107d",
+        "type": "inject",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello How are you doing",
+        "payloadType": "str",
+        "x": 330,
+        "y": 2560,
+        "wires": [
+            [
+                "7a5cd1c9.5f18d"
+            ]
+        ]
+    },
+    {
+        "id": "d1226ce6.cc656",
+        "type": "play audio",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "voice": "1",
+        "x": 850,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "37de7fed.6be7f",
+        "type": "function",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "func": "msg.params={}\nmsg.params.session_id=\"1de6ee38-6ea6-40c9-93b9-373155bf19ae\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 2200,
+        "wires": [
+            [
+                "18c035de.d4770a"
+            ]
+        ]
+    },
+    {
+        "id": "8ddb32da.e5cc5",
+        "type": "ui_gauge",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "group": "219cd894.572c68",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "125",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cfd3b5e2.daced8",
+        "type": "function",
+        "z": "a24972bc.42b41",
+        "name": "PH value",
+        "func": "global.set('PH', msg.payload.d.pHvalue)\nmsg.payload = msg.payload.d.pHvalue\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "3f84dc91.bcb144",
+                "3795b637.660c8a"
+            ]
+        ]
+    },
+    {
+        "id": "3795b637.660c8a",
+        "type": "ui_gauge",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "group": "219cd894.572c68",
+        "order": 6,
+        "width": 7,
+        "height": 4,
+        "gtype": "gage",
+        "title": "PH value",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "eb457a8a.c76cd8",
+        "type": "ui_gauge",
+        "z": "a24972bc.42b41",
+        "name": "",
+        "group": "219cd894.572c68",
+        "order": 11,
+        "width": 7,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 340,
+        "wires": []
+    }
+]
