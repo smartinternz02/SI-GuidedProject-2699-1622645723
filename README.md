@@ -29,7 +29,7 @@ standards, so that, necessary actions can be taken.
 
 As Hardware is not available I have taken random values in python for sensor data as
 physical hardware is not available.
-Coming to Software,The designed River water quality monitoring system can be
+Coming to Software,the designed River water quality monitoring system can be
 divided into:
 •IBM WATSON IOT PLATFORM
 • NODERED
